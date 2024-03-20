@@ -1,0 +1,377 @@
+:root {
+  background-color: #FFFFFF;
+  margin-left: 2%;
+  margin-right: 2%;
+  --menu-font-size: 120%;
+}
+
+body, div, span, h1, h2, h3, h4, aside, p, main, nav, ul, li, a {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+  }
+
+/*@media only screen and (min-width: 768px) {*/
+
+    /* text stylings */
+    h1, h3, h4, h5, h6 {
+        font-family: "DM Serif Display", serif;
+    }
+
+    h2, h3, p {
+        font-family: "DM Sans", sans-serif;
+    }
+
+    /* menu styling */
+    .menu nav{
+        display: flex;
+        justify-content: right;
+        margin-right: 2%;
+    }
+
+    .menu a{
+        font-size: var(--menu-font-size);
+        color: #000000;
+        padding: 2%;
+        
+    }
+
+    .menu a:hover {
+        color: #7b7b7b;
+    }
+
+    /* welcome page stying */
+    #welcome-page {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        align-items: center;
+    }
+
+    #welcome-page.text {
+        display: flex;
+        flex-direction: row;
+        text-align: left;
+        
+    }
+
+    .xl-heading {
+        font-size: 320%;
+        font-weight: 400;
+    }
+
+    .large-heading {
+        font-size: 150%;
+        font-weight: 300;
+        font-style: light;
+    }
+
+    .medium-heading {
+        font-size: 130%;
+        font-weight: 300;
+        font-style: light;
+    }
+
+    #welcome-page img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* about styling */
+
+    #about {
+        padding: 2%;
+        background-color: #FFFFFF;
+        text-align: center;
+        line-height: 2;
+    }
+
+    .subtitle {
+        font-size: 170%;
+        font-weight: 400;
+    }
+
+    #about p {
+        font-size: 130%;
+    }
+
+    .connect {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+        grid-gap: 10%;
+        margin-left: 20%;
+        margin-right: 20%;
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+
+    .connect a {
+        color: white;
+        background-color: black;
+        border-style: solid;
+        border-color: black;
+        border-radius: 10pt;
+        font: "DM Serif Display", serif;
+        font-size: 130%;
+        padding: 3%;
+    }
+
+    .connect a:hover {
+        color: black;
+        background-color: white;
+        border-style: solid;
+        border-color: black;
+        border-radius: 10pt;
+        font: "DM Serif Display", serif;
+        font-size: 130%;
+        padding: 3%;
+    }
+
+    /* work section */
+
+    #work-gallery {
+        display: grid;
+        grid-template-rows: repeat(4, 1fr);
+        grid-gap: .5%;
+        text-align: center;
+    }
+
+    .image-grid-1 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: .5%;
+        text-align: center;
+    }
+
+    .image-grid-2 {
+        display: grid;
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .image-grid-2 a h2 {
+        margin-top: 0pt;
+        margin-bottom: 5%
+    }
+
+    .image-grid-6 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(3, 1fr);
+        grid-gap: .5%;
+        background-color: black;
+    }
+
+    .image-grid-4 {
+        display: grid;
+        grid-gap: .5%;
+        background-color: black;
+        align-items: center;
+        justify-items: center;
+    }
+
+    .image-grid-04 {
+        display: grid;
+        grid-gap: .5%;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(2, 1fr);
+        align-items: center;
+        justify-items: center;
+    }
+
+    .image-grid-3 {
+        display: grid;
+        grid-gap: .5%;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: repeat(2, 1fr);
+        align-items: center;
+        justify-items: center;
+    }
+
+    a h2 {
+        color: black;
+        text-decoration: none;
+        padding: 3%;
+    }
+
+    a h2:hover {
+        color: #7b7b7b;
+    }
+    
+    /* footer styling */
+    footer {
+        background-color: #000000;
+        position: absolute;
+        right: 0;
+        left: 0;
+        text-align: center;
+        font-size: 130%;
+        font: "DM Sans", sans-serif;
+        padding: 2%;
+    }
+
+    /* portfolio descriptions */
+    .work-description {
+        display: grid;
+    }
+
+    .work-description h1 {
+        margin-bottom: 2%;
+    }
+
+    .work-description h3 {
+        margin-bottom: 2%;
+    }
+
+    /* flyer page styling */
+    #flyers {
+        background-color: black;
+        color: white;
+    }
+
+    #flyers div.menu a {
+        color: white;
+    }
+
+    #flyers p {
+        margin-bottom: 4%;
+    }
+
+    /* promotion styling */
+    #promotion-welcome {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-gap: 4%;
+    }
+    .text-image-grid {
+        margin-top: 2%;
+        margin-bottom: 2%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        grid-gap: 2%;
+    }
+
+    aside {
+        border: solid;
+        border-color: black;
+        border-radius: 3pt;
+        text-align: center;
+        padding: 5%;
+    } 
+
+    aside h3, aside p {
+        padding: 1%;
+    }
+
+    #insta, #tiktok {
+        font-size: 200%;
+        color: black;
+        padding: 2%;
+    }
+
+    #insta:hover, #tiktok:hover {
+        color: #7b7b7b;
+    }
+
+    /* political art styling */
+    #political {
+        background-color: black;
+        color: white;
+    }
+
+    #political div.menu a {
+        color: white;
+    }
+
+    #political p {
+        margin-bottom: 4%;
+    }
+
+    /* alt hist style */
+    #alt-description {
+        margin-bottom: 4%;
+    }
+
+    #new-posters {
+        margin-bottom: .75%;
+    }
+
+    #lala {
+        padding: .5%;
+    }
+
+    /*cat styling */
+    #cards {
+        background-color: black;
+        color: white;
+    }
+
+    #cards div.menu a {
+        color: white;
+    }
+
+    #cards p {
+        margin-bottom: 4%;
+    }
+
+    /*sticker styling */
+    #stickers {
+        background-color: black;
+        color: white;
+    }
+
+    #stickers div.menu a {
+        color: white;
+    }
+
+    #stickers p {
+        margin-bottom: 4%;
+    }
+
+    /* contact styling */
+    #contact-page {
+        text-align: center;
+        padding: 10%;
+    }
+
+    #contact-page h2 {
+        margin-bottom: 10%;
+    }
+
+    #contact-page h1 {
+        margin-bottom: 4%;
+    }
+
+    #contact-page a {
+        color: white;
+        background-color: black;
+        border-style: solid;
+        border-color: black;
+        border-radius: 10pt;
+        font: "DM Serif Display", serif;
+        font-size: 130%;
+        padding: 3%;
+    }
+
+    #contact-page a:hover {
+        color: black;
+        background-color: white;
+        border-style: solid;
+        border-color: black;
+        border-radius: 10pt;
+        font: "DM Serif Display", serif;
+        font-size: 130%;
+        padding: 3%;
+    }
+
+    #contact-connect a{
+        padding: 4%;
+    }
+/*}*/
