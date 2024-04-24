@@ -257,13 +257,20 @@ img {
         align-items: center;
         grid-gap: 2%;
     }
-
-    aside {
+    #site-link {
+        text-align: center;
+        font-size: 130%;
+        font: "DM Sans", sans-serif;
+    }
+    aside.socials {
         border: solid;
         border-color: black;
         border-radius: 3pt;
         text-align: center;
         padding: 5%;
+    } 
+    aside {
+        border: none;
     } 
 
     aside h3, aside p {
@@ -278,6 +285,11 @@ img {
 
     #insta:hover, #tiktok:hover {
         color: #7b7b7b;
+    }
+
+    .single-image {
+        max-width: 50%;
+        max-height: 50%;
     }
 
     /* political art styling */
